@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:'Estedad', Courier, monospace;
+  font-size: 12px;
+  direction: rtl;
+}
+@font-face {
+  font-family: Estedad;
+  font-style: normal;
+  font-weight:300;
+  src: url("../src//fonts/ttf/Estedad-Light.ttf");
+  src: url("../src//fonts/webfonts/Estedad-Light.woff2")
+      format("embedded-opentype"),
+
+}
+@font-face {
+    font-family: Estedad;
+    font-style: normal;
+    font-weight:400;
+    src: url("../src//fonts/ttf/Estedad-Regular.ttf");
+    src: url("../src//fonts/webfonts/Estedad-Regular.woff2")
+        format("embedded-opentype"),
+
+  }
+  @font-face {
+    font-family: Estedad;
+    font-style: normal;
+    font-weight:500;
+    src: url("../src//fonts/ttf/Estedad-Medium.ttf");
+    src: url("../src//fonts/webfonts/Estedad-Medium.woff2")
+        format("embedded-opentype"),
+
+  }
+  @font-face {
+    font-family: Estedad;
+    font-style: normal;
+    font-weight:700;
+    src: url("../src//fonts/ttf/Estedad-Bold.ttf");
+    src: url("../src//fonts/webfonts/Estedad-Bold.woff2")
+        format("embedded-opentype"),
+
+  }
+  @font-face {
+    font-family: Estedad;
+    font-style: normal;
+    font-weight:700;
+    src: url("../src//fonts/ttf/Estedad-ExtraBold.ttf");
+    src: url("../src//fonts/webfonts/Estedad-ExtraBold.woff2")
+        format("embedded-opentype"),
+
+  }
