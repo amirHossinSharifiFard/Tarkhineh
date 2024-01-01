@@ -63,7 +63,7 @@ export const colors = {
 export  const theme = createTheme({
   direction: 'rtl', // Both here and <body dir="rtl">,
   palette: {
-   
+   primary:{ main:colors.primary[100]},
     secondary: {
       main: colors.white[100],
     },
