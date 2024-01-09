@@ -1,19 +1,39 @@
-import Cards from "./Cards";
-import mochim from "../photoes/cardsImage/mochim.png";
-// import image from "../photoes/cardsImage/Product card-9.png";
-// import image1 from "../photoes/cardsImage/Product card-8.png";
-// import image2 from "../photoes/cardsImage/Product card-7.png";
-// import image3 from "../photoes/cardsImage/Product card-6.png";
-import { Stack } from "@mui/material";
+/* eslint-disable react/prop-types */
+import { Swiper, SwiperSlide } from "swiper/react";
 
-const data = [mochim,mochim];
-const CardSlider = () => {
+import Cards from "./Cards";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import "./slider.css";
+
+// import required modules
+import { Autoplay, Pagination } from "swiper/modules";
+import { Stack } from "@mui/material";
+const CardSlider = ({data}) => {
+  const image =data
   return (
-    <Stack display="flex" flexDirection='row' gap={3}>
-      {data.map((item, i) => (
-        <Cards key={i} imgSrc={item} />
-      ))}
-    </Stack>
+    <Swiper
+      slidesPerView={4}
+      centeredSlides={true}
+      spaceBetween={30}
+      pagination={{
+        clickable: true
+      }}
+      modules={[Pagination, Autoplay]}
+      className='mySwiper'>
+      <Stack display='flex' flexDirection='row' gap={3}>
+        {image &&
+          image.map((item, i) => (
+            <SwiperSlide key={i}>
+              <Cards imgSrc={item.url} title={item.title} price={item.price} />
+            </SwiperSlide>
+          ))}
+      </Stack>
+    </Swiper>
   );
 };
 

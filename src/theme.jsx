@@ -55,17 +55,18 @@ export const colors = {
     100: "#A9791C",
     200: "#F4B740",
     300: "#FFF8E1"
+  },
+  black:{
+    100:"black"
   }
 };
 
-
-
-export  const theme = createTheme({
-  direction: 'rtl', // Both here and <body dir="rtl">,
+export const theme = createTheme({
+  direction: "rtl", // Both here and <body dir="rtl">,
   palette: {
-   primary:{ main:colors.primary[100]},
+    primary: { main: colors.primary[100] },
     secondary: {
-      main: colors.white[100],
-    },
-  },
+      main: colors.white[100]
+    }
+  }
 });
